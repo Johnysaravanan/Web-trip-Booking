@@ -2,12 +2,18 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: rgb(var(--bs-tertiary-color-rgb));
 }
-
+/* Login-Page */
+.login{
+  max-width: 340px;
+  padding: 0.5rem;
+  background-color: rgb(241, 241, 241);
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
