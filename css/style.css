@@ -96,6 +96,13 @@ body {
 
 @media (max-width: 767px) {
   .tex-sm-center {
+    display: block;
     text-align: center !important;
   }
 }
+@media (min-width: 767px){
+  .tex-sm-center{
+    display: none;
+  }
+} 
+

@@ -29,6 +29,12 @@
   <!-- script -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+   nav-black{
+    background: #000000;
+   }     
+      
+  </style>
 
 </head>
 
@@ -37,13 +43,13 @@
   <!-- Navbar -->
 
   <header data-bs-theme="dark">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md  fixed-top bg-black">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="./images/Flight-Icon-PNG.png" alt="" srcset="" width="30px"
-            class="mx-auto">Chalo.<span class="small">co</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          class="mx-auto">Chalo.<span class="small">co</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
@@ -58,22 +64,19 @@
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2 " style="color: rgb(57, 147, 250);" type="search"
-              placeholder="Where do you wann.. go?" aria-label="Search">
-            <button class="btn btn-outline-primary me-2 " type="submit">Search</button>
-            
+            <input class="form-control me-2 bg-black" type="search" placeholder="Where do you wann.. go?"
+              aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
-          <div class="tex-sm-center my-3">
-          <a class="btn btn-outline-success " style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .90rem; --bs-btn-font-size: 1rem;" href="./login_page.html" role="button">Sign_up</a></div>
-          <!-- <button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-            Custom button
-          </button> -->
-          
-          
+          <p class="tex-sm-center mt-3"  type="submit"><a class="btn btn-outline-success" href="./login_page.html">Sign in</a></p>
         </div>
       </div>
     </nav>
   </header>
+          <!-- <button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+            Custom button
+          </button> -->
+
   <!-- <button class="tex-sm-center py-2 btn btn-outline-success">Sign_in</button>
   <p class="tex-sm-center"  type="submit"><a class="btn btn-outline-success" href="./login_page.html">Sign in</a></p> -->
 
@@ -187,7 +190,7 @@
         href="#">Terms</a></p>
     <p class="float-end"><a href="#">Back to top</a></p>
   </footer>
-  
+
   <!-- Footer end -->
 
   <script>
