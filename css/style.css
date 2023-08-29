@@ -52,7 +52,6 @@ body {
   margin-left: .75rem;
 }
 
-/* rtl:end:ignore */
 
 
 /* Featurettes
@@ -69,10 +68,8 @@ body {
   letter-spacing: -.05rem;
 }
 
-/* rtl:end:remove */
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
+/* RESPONSIVE CSS */
 
 @media (min-width: 40em) {
 
