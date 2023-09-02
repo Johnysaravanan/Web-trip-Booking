@@ -16,8 +16,7 @@ body {
   background-color: rgb(241, 241, 241);
 }
 
-
-/* CUSTOMIZE THE CAROUSEL
+/* THE CAROUSEL
 -------------------------------------------------- */
 
 /* Carousel base class */
@@ -135,3 +134,8 @@ body {
   }
 }
 
+@media (max-width:767px) {
+  .dis-none{
+    display: none;
+  }
+}
