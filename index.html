@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>trip to drip</title>
-
   <!-- Bootstrap Link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -29,18 +28,12 @@
   <!-- script -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    nav-black {
-      background: #000000;
-    }
-  </style>
 
 </head>
 
 <body>
   <!-- travel booking website -->
   <!-- Navbar -->
-
   <header data-bs-theme="dark">
     <nav class="navbar navbar-expand-md  fixed-top bg-black">
       <div class="container-fluid">
@@ -52,18 +45,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./booking.html">Booking</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./places.html">Places</a>
-            </li>
-            <li class="nav-item dropdown-center">
-              <a type="button" aria-current="page" class="dropdown-toggle nav-link" data-bs-toggle="dropdown"
-                aria-expanded="false">About</a>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="./places.html">Places</a></li>
+            <li class="nav-item dropdown-center"><a type="button" aria-current="page" class="dropdown-toggle nav-link"
+                data-bs-toggle="dropdown" aria-expanded="false">About</a>
               <ul class="dropdown-menu">
                 <li><button class="dropdown-item" type="button">Privacy</button></li>
                 <li><button class="dropdown-item" type="button">Terms & Conditions</button></li>
@@ -80,133 +66,131 @@
               <button class="form-control-sm w-50 mt-2 btn-sm btn btn-outline-success" type="submit">Search</button>
             </div>
           </form>
-          <div class="">
-            <p class="tex-sm-center text-white mt-4">Why are you waiting for... Just Signup...</p>
-            <a type="link" class="btn form-control-sm btn-outline-success" href="/login_page.html">Sign_up</a>
-          </div>
+          <p class="tex-sm-center text-white mt-4">Why are you waiting for... Just Signup...</p>
+          <a type="link" class="btn form-control-sm btn-outline-success" href="/login_page.html">Sign_up</a>
         </div>
-        <!-- <p class="d-flex" type="submit"><a class="btn btn-outline-success" href="./login_page.html">Sign_in</a></p></form> -->
-      </div>
       </div>
     </nav>
   </header>
-
   <!-- Navbar end -->
-  <!-- Main -->
 
+  <!-- Main -->
   <main>
     <!-- Carousel silde -->
 
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <section>
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"><button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <!-- Carousel silde 1 -->
+
+          <div class="carousel-item active">
+            <img class="bd-placeholder-img" width="100%" height="100%"
+              src="./images/A_view_of_Nainital_lake_with_the_morning_mist.jpg" aria-hidden="true">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></img>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Discover, Connect, Embrace.</h1>
+                <p class="opacity-75">Your Odyssey Awaits, Click to Connect with Discovery and Beyond...</p>
+                <p><a class="btn btn-lg btn-primary" href="./login_page.html">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel silde 2 -->
+
+          <div class="carousel-item">
+            <img class="bd-placeholder-img" width="100%" height="100%"
+              src="./images/Sarayu_River_night_view,_Ayodhya_001.jpg">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></img>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Fly away to your dream holiday.</h1>
+                <p>Get inspired, compare and book flights with more flexibility.</p>
+                <p><a class="btn btn-lg btn-primary" href="./booking.html">Book your trip!</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel silde 3 -->
+
+          <div class="carousel-item">
+            <img class="bd-placeholder-img" width="100%" height="100%"
+              src="./images/Karakoram-West_Tibetan_Plateau_alpine_steppe.jpg">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></img>
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Those days</h1>
+                <p>We bring you to our memories, stay signed!</p>
+                <p><a class="btn btn-lg btn-primary" href="./memories.html">Browse gallery</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-inner">
-
-        <!-- Carousel silde 1 -->
-
-        <div class="carousel-item active">
-          <img class="bd-placeholder-img" width="100%" height="100%"
-            src="./images/A_view_of_Nainital_lake_with_the_morning_mist.jpg" aria-hidden="true">
-          <rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></img>
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <h1>Discover, Connect, Embrace.</h1>
-              <p class="opacity-75">Your Odyssey Awaits, Click to Connect with Discovery and Beyond...</p>
-              <p><a class="btn btn-lg btn-primary" href="./login_page.html">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carousel silde 2 -->
-
-        <div class="carousel-item">
-          <img class="bd-placeholder-img" width="100%" height="100%"
-            src="./images/Sarayu_River_night_view,_Ayodhya_001.jpg">
-          <rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></img>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Fly away to your dream holiday.</h1>
-              <p>Get inspired, compare and book flights with more flexibility.</p>
-              <p><a class="btn btn-lg btn-primary" href="./booking.html">Book your trip!</a></p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carousel silde 3 -->
-
-        <div class="carousel-item">
-          <img class="bd-placeholder-img" width="100%" height="100%"
-            src="./images/Karakoram-West_Tibetan_Plateau_alpine_steppe.jpg">
-          <rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></img>
-          <div class="container">
-            <div class="carousel-caption text-end">
-              <h1>Those days</h1>
-              <p>We bring you to our memories, stay signed!</p>
-              <p><a class="btn btn-lg btn-primary" href="./memories.html">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- carousel nav btn -->
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-
-      <!-- carousel nav btn end -->
-
-    </div>
+    </section>
 
     <!-- Carousel end -->
 
     <section>
       <div class="container-fluid">
-        <div class="card-group">
-          <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Thaliyil.jpg/375px-Thaliyil.jpg"
-              class="card-img-top" alt="kasaragod">
-            <div class="card-img-overlay">
-              <h5 class="card-title">kasaragod to trivandrum</h5>
-              <p class="card-text">book your ticket now and <abbr title="%OFFER%">get 40% off</abbr>.</p>
+        <!-- Info Card -->
+        <section>
+          <div class="card-group">
+            <div class="card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Thaliyil.jpg/375px-Thaliyil.jpg"
+                class="card-img-top" alt="kasaragod">
+              <div class="card container-fluid">
+                <h5 class="card-title">kasaragod to trivandrum</h5>
+                <p class="card-text">book your ticket now and <abbr title="%OFFER%">get 40% off</abbr>.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
             </div>
-            <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
+
+            <div class="card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Thaliyil.jpg/375px-Thaliyil.jpg"
+                class="card-img-top" alt="">
+              <div class="card container-fluid">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
             </div>
+
+            <div class="card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Thaliyil.jpg/375px-Thaliyil.jpg"
+                class="card-img-top" alt="">
+              <div class="card container-fluid">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
+
           </div>
-          <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Thaliyil.jpg/375px-Thaliyil.jpg"
-              class="card-img-top" alt="...">
-            <div class="card container-fluid">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </div>
-          </div>
-          <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Thaliyil.jpg/375px-Thaliyil.jpg"
-              class="card-img-top" alt="...">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
       <hr>
       <div class="flex-container mt-3 container-fluid">
@@ -220,7 +204,8 @@
         </div>
         <!-- Side social media nav -->
         <div class="flex-right">
-          <div class="card">
+          <div class="p-1 border-left">
+            <div class="card">
             <div class="card-body">
               <blockquote class="blockquote mb-0">
                 <p
@@ -230,27 +215,25 @@
               </blockquote>
             </div>
           </div>
+          
           <div class="popover-header text-center">
             <p class="my-3">Follow us.</p>
             <div class="text-center mb-2">
-              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-instagram "
+              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-instagram"
                   style="color: #000000;"></i></a>
-              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-twitter " style="color: #000000;"></i></a>
-              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-telegram "
-                  style="color: #000000;"></i></a>
-              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-facebook "
-                  style="color: #000000;"></i></a>
-              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-whatsapp "
-                  style="color: #000000;"></i></a>
+              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a>
+              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-telegram" style="color: #000000;"></i></a>
+              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-facebook" style="color: #000000;"></i></a>
+              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #000000;"></i></a>
             </div>
           </div>
+        </div>
 
         </div>
       </div>
     </section>
+
     <!-- Main page -->
-
-
 
   </main>
   <section class="site-newsletter border-top mt-3">
@@ -262,7 +245,7 @@
           <div class="col-xs-12 col-sm-9 col-md-7 col-lg-5 ms-auto me-auto">
             <div class="input-group mb-3 mt-3">
               <input type="text" class="form-control" placeholder="Email address" aria-label="Email address">
-              <span><button class="btn btn-secondary" type="button">Subscribe</button></span>
+              <span><button class="btn btn-success" type="button">Subscribe</button></span>
             </div>
           </div>
         </div>
