@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Booking</title>
   <!-- Bootstrap Link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -24,63 +24,85 @@
   </style>
 </head>
 <!-- Booking page -->
-<!-- Navbar -->
-
 <body>
-  <header data-bs-theme="dark">
-    <nav class="navbar navbar-expand-md  fixed-top bg-black">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="./images/Flight-Icon-PNG.png" alt="" srcset="" width="30px"
-            class="mx-auto">Chalo.<span class="small">co</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./booking.html">Booking</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./places.html">Places</a>
-            </li>
-            <li class="nav-item dropdown-center">
-              <a type="button" aria-current="page" class="dropdown-toggle nav-link" data-bs-toggle="dropdown"
-                aria-expanded="false">About</a>
-              <ul class="dropdown-menu">
-                <li><button class="dropdown-item" type="button">Privacy</button></li>
-                <li><button class="dropdown-item" type="button">Terms & Conditions</button></li>
-                <li><button class="dropdown-item" type="button">Support</button></li>
-                <li><button class="dropdown-item" type="button">About Chalo</button></li>
-              </ul>
-            </li>
-          </ul>
+ <!-- Navbar -->
+ <header data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md  fixed-top bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="./images/Flight-Icon-PNG.png" alt="" srcset="" width="30px"
+          class="mx-auto">Chalo.<span class="small">co</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./booking.html">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="./places.html">Places</a></li>
+          <li class="nav-item dropdown-center"><a type="button" aria-current="page" class="dropdown-toggle nav-link"
+              data-bs-toggle="dropdown" aria-expanded="false">About</a>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" type="button">Privacy</button></li>
+              <li><button class="dropdown-item" type="button">Terms & Conditions</button></li>
+              <li><button class="dropdown-item" type="button">Support</button></li>
+              <li><a href="#about" class="text-decoration-none"><button class="dropdown-item" type="button">About Chalo</button></a></li>
+            </ul>
+          </li>
+        </ul>
 
-          <form class="" role="search">
-            <div class="tex-sm-center">
-              <input class="form-control me-2 bg-black" type="search" placeholder="Where do you wann.. go?"
-                aria-label="Search">
-              <button class="form-control-sm w-50 mt-2 btn-sm btn btn-outline-success" type="submit">Search</button>
-            </div>
-          </form>
-          <div class="">
-            <p class="tex-sm-center text-white mt-4">Why are you waiting for... Just Signup...</p>
-            <a type="link" class="btn form-control-sm btn-outline-success" href="/login_page.html">Sign_up</a>
+        <form class="" role="search">
+          <div class="tex-sm-center">
+            <input class="form-control me-2 bg-black" type="search" placeholder="Where do you wann.. go?"
+              aria-label="Search">
+            <button class="form-control-sm w-50 mt-2 btn-sm btn btn-outline-success" type="submit">Search</button>
           </div>
-        </div>
-        <!-- <p class="d-flex" type="submit"><a class="btn btn-outline-success" href="./login_page.html">Sign_in</a></p></form> -->
+        </form>
+        <p class="tex-sm-center text-white mt-4">Why are you waiting for... Just Signup...</p>
+        <a type="link" class="btn form-control-sm btn-outline-success" href="/login_page.html">Sign_up</a>
       </div>
-      </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
+<!-- Navbar end -->
 
   <Main>
     <div class="mb-6 booking">
-      <form>
-        
+      <form class="mt-5">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Choose your Date</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
       </form>
     </div>
   </Main>
