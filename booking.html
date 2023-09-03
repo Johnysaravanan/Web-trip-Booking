@@ -24,48 +24,239 @@
   </style>
 </head>
 <!-- Booking page -->
-<body>
- <!-- Navbar -->
- <header data-bs-theme="dark">
-  <nav class="navbar navbar-expand-md  fixed-top bg-black">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="./images/Flight-Icon-PNG.png" alt="" srcset="" width="30px"
-          class="mx-auto">Chalo.<span class="small">co</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="./booking.html">Booking</a></li>
-          <li class="nav-item"><a class="nav-link" href="./places.html">Places</a></li>
-          <li class="nav-item dropdown-center"><a type="button" aria-current="page" class="dropdown-toggle nav-link"
-              data-bs-toggle="dropdown" aria-expanded="false">About</a>
-            <ul class="dropdown-menu">
-              <li><button class="dropdown-item" type="button">Privacy</button></li>
-              <li><button class="dropdown-item" type="button">Terms & Conditions</button></li>
-              <li><button class="dropdown-item" type="button">Support</button></li>
-              <li><a href="#about" class="text-decoration-none"><button class="dropdown-item" type="button">About Chalo</button></a></li>
-            </ul>
-          </li>
-        </ul>
 
-        <form class="" role="search">
-          <div class="tex-sm-center">
-            <input class="form-control me-2 bg-black" type="search" placeholder="Where do you wann.. go?"
-              aria-label="Search">
-            <button class="form-control-sm w-50 mt-2 btn-sm btn btn-outline-success" type="submit">Search</button>
+<body>
+  <!-- Navbar -->
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md  fixed-top bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="./images/Flight-Icon-PNG.png" alt="" srcset="" width="30px"
+            class="mx-auto">Chalo.<span class="small">co</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="./places.html">Places</a></li>
+            <li class="nav-item dropdown-center"><a type="button" aria-current="page" class="dropdown-toggle nav-link"
+                data-bs-toggle="dropdown" aria-expanded="false">About</a>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button">Privacy</button></li>
+                <li><button class="dropdown-item" type="button">Terms & Conditions</button></li>
+                <li><button class="dropdown-item" type="button">Support</button></li>
+                <li><a href="#about" class="text-decoration-none"><button class="dropdown-item" type="button">About
+                      Chalo</button></a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <form class="" role="search">
+            <div class="tex-sm-center">
+              <input class="form-control me-2 bg-black" type="search" placeholder="Where do you wann.. go?"
+                aria-label="Search">
+              <button class="form-control-sm w-50 mt-2 btn-sm btn btn-outline-success" type="submit">Search</button>
+            </div>
+          </form>
+          <p class="tex-sm-center text-white mt-4">Why are you waiting for... Just Signup...</p>
+          <a type="link" class="btn form-control-sm btn-outline-success" href="/login_page.html">Sign_up</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Navbar end -->
+
+  <section>
+    <div class="flex-container mt-5 container-fluid">
+      <!-- content about the page -->
+      <div class="flex-left">
+        <div class="container-fluid">
+          <div class="ms-3">
+            <p class="h4">Book your Tickets</p>
           </div>
-        </form>
-        <p class="tex-sm-center text-white mt-4">Why are you waiting for... Just Signup...</p>
-        <a type="link" class="btn form-control-sm btn-outline-success" href="/login_page.html">Sign_up</a>
+          <form>
+            <div class="mb-2 row">
+              <div class="mb-2 col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" name="" id="name"  required>
+              </div>
+              <div class="mb-2 col-md-6">
+                <label for="number" class="form-label">Phone no</label>
+                <input type="text" class="form-control" name="" id="number">
+              </div>
+            </div>
+            <div class="row">
+              <div class="mb-2 col-md-8">
+                <label for="" class="form-label ">Email</label>
+                <input type="email" class="form-control" name="" id="" placeholder="Enter your email address">
+              </div>
+            </div>
+            <div class="row" id="date">
+              <div class="mb-2 col-md-8">
+                <label for="" class="form-label">City</label>
+                <input type="text" class="form-control" name="" id="" placeholder="Enter your City">
+              </div>
+              <div class="mb-2 col-md-4">
+                <label for="" class="form-label ">Number of passengers</label>
+                <input type="number" class="form-control" name="" id="" required> 
+              </div>
+            </div>
+            <div class="row">
+              <div class="mb-3 col-md-4">
+                <label for="" class="form-label">Check-In</label>
+                <input type="date" class="form-control" name="" id="">
+              </div>
+              <div class="mb-3 col-md-4">
+                <label for="" class="form-label">Check-Out</label>
+                <input type="date" class="form-control" name="" id="">
+              </div>
+            </div>
+            <!-- Choose Package -->
+            <div class="row">
+              <div class="mb-2 col-md-8">
+                <label for="" class="form-label">Choose place</label>
+                <select class="form-select" name="" id="">
+                  <option selected>Choose where you want to go!</option>
+                  <option value="">goa</option>
+                  <option value="">Delhi</option>
+                  <option value="">Coorg</option>
+                  <option value="">Idukki</option>
+                  <option value="">Wayanad</option>
+                  <option value="">Chennai</option>
+                  <option value="">Kashmir</option>
+                </select>
+              </div>
+              <div class="mb-3 col-md-4">
+                <label for="" class="form-label">Choose Package</label>
+                <select class="form-select" name="" id="">
+                  <option selected>Choose one</option>
+                  <option value="">2500$</option>
+                  <option value="">4999$</option>
+                  <option value="">8999$</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Agreed to your terms and Conditions.
+              </label>
+            </div>
+            <div class="text-center"> 
+              <a name="" id="" class="btn btn-primary text-center" href="#" role="button">Book your Slot</a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Side social media nav -->
+
+      <div class="flex-right">
+        <hr>
+        <div class="flex-right dis-none">
+          <div class="card bg-dark text-white">
+            <img class="card-img" src="./images/Golden_temple.jpg" alt="Title" width="100%">
+            <div class="card-img-overlay">
+              <h4 class="card-title">Golden Temple</h4>
+            </div>
+          </div>
+        </div>
+        <div class="p-1 border-left">
+
+          <!-- Quote -->
+          <div class="card mt-2">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p
+                  style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 12px;">
+                  A journey is best measured in friends, rather than miles.</p>
+                <footer class="blockquote-footer ms-3"><cite title="Source Title">Tim Cahill</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+          <!-- Quote end -->
+
+          <div class="popover-header text-center">
+            <p class="my-3">Follow us.</p>
+            <div class="text-center mb-2">
+              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-instagram"
+                  style="color: #000000;"></i></a>
+              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a>
+              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-telegram" style="color: #000000;"></i></a>
+              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-facebook" style="color: #000000;"></i></a>
+              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #000000;"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-</header>
-<!-- Navbar end -->
+  </section>
+  </section>
 
+  <!-- Main page -->
+
+  </main>
+  <section class="site-newsletter border-top mt-3">
+    <div class="container">
+      <div class="text-center mt-4">
+        <h3 class="h4 mb-2">Subscribe to our newsletter</h3>
+        <p class="text-muted">Join our monthly newsletter and never miss out on a new stories and offers.</p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-9 col-md-7 col-lg-5 ms-auto me-auto">
+            <div class="input-group mb-3 mt-3">
+              <input type="text" class="form-control" placeholder="Email address" aria-label="Email address">
+              <span><button class="btn btn-success" type="button">Subscribe</button></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Newsletter end -->
+  <section>
+    <div class="container">
+
+    </div>
+  </section>
+  <!-- Footer -->
+
+  <hr>
+  <div class="container">
+    <footer class="py-3 my-4 text-center" data-bs-theme="dark">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">Booking</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">Places</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">Privacy</a></li>
+      </ul>
+      <div class="d-flex flex-wrap justify-content-between pt-3 mt-4">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <img src="./images/Flight-Icon-PNG.png" alt="" class="bi" width="30" height="24" srcset="">
+          </a>
+          <span class="mb-3 mb-md-0 text-dark">&copy; 2023 Company, Inc.</a></span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-instagram"
+                style="color: #000000;"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-twitter"
+                style="color: #000000;"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-telegram"
+                style="color: #000000;"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-facebook"
+                style="color: #000000;"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-whatsapp"
+                style="color: #000000;"></i></a></li>
+        </ul>
+      </div>
+      <p class="float-end"><a href="#">Back to top</a></p>
+    </footer>
+
+    <!-- Footer end -->
+  </div>
   <Main>
     <div class="mb-6 booking">
       <form class="mt-5">
