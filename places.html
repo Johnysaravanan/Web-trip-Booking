@@ -24,6 +24,15 @@
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
+
+    .multi-carousel .multi-carousel-inner .multi-carousel-item {
+      display: inline-block;
+      width: 100%;
+      font-size: 16px;
+      -webkit-transition: all .3s ease-out;
+      transition: all .3s ease-out;
+      padding: 0 3px;
+    }
   </style>
 </head>
 
@@ -76,28 +85,185 @@
       </div>
     </nav>
   </header>
+  <div id="about"></div>
+  <hr>
+  <section>
+    <div class="flex-container mt-5 container-fluid">
+      <!-- content about the page -->
+      <div class="flex-left">
+        <div class="container-fluid">
+          <div class="ms-3">
+            <p class="h3">Destination</p>
+            <p style="font-family: 'Lato',sans-serif;">Top 6 Tourism places</p>
+          </div>
+          <main>
+            <div class="container mt-4">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+                <div class="col mb-3">
+                  <!-- place = Goa -->
+                  <div class="card bg-dark text-white">
+                    <img class="card-img" src="./images/Destina/candolim-goa.jpg" alt="Title">
+                    <div class="card-img-overlay">
+                      <h4 class="card-title">Goa</h4>
+                      <p class="card-text fst-italic fw-lighter">Candolim</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-3">
+                  <div class="card bg-dark text-white">
+                    <img class="card-img" src="./images/Destina/harangi-dam-coorg.jpg" alt="Title">
+                    <div class="card-img-overlay">
+                      <h4 class="card-title">Coorg</h4>
+                      <p class="card-text fst-italic fw-lighter">harangi dam</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-3">
+                  <div class="card bg-dark text-white">
+                    <img class="card-img" src="./images/Destina/india-gate-a-beautiful.jpg" alt="Title">
+                    <div class="card-img-overlay">
+                      <h4 class="card-title">Delhi</h4>
+                      <p class="card-text fst-italic fw-lighter">India Gate</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-3">
+                  <div class="card bg-dark text-white">
+                    <img class="card-img" src="./images/Destina/ladakh-tourism.jpg" alt="Title">
+                    <div class="card-img-overlay">
+                      <h4 class="card-title">Kashmir</h4>
+                      <p class="card-text fst-italic fw-lighter">ladakh</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-3">
+                  <div class="card bg-dark text-white">
+                    <img class="card-img" src="./images/Destina/Edakkal-Caves-Wayanad.jpg" alt="Title">
+                    <div class="card-img-overlay">
+                      <h4 class="card-title">Wayanad</h4>
+                      <p class="card-text fst-italic fw-lighter">Edakkal caves</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-3">
+                  <div class="card bg-dark text-white">
+                    <img class="card-img" src="./images/Destina/bull-temple-bang.jpg" alt="Title">
+                    <div class="card-img-overlay">
+                      <h4 class="card-title">Bangalore</h4>
+                      <p class="card-text fst-italic fw-lighter">Bull Temple</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
 
-  <main>
-    <div class="row">
-      <div class="bg-black col-4 col-md-8">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio iure aspernatur tenetur cum accusantium eius. Veniam, fugit saepe? Ratione, esse nulla et blanditiis quia necessitatibus facilis architecto praesentium fuga modi.</p>
-      </div>
-      <div class="bg-primary col-4 col-md-4 ">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio iure aspernatur tenetur cum accusantium eius. Veniam, fugit saepe? Ratione, esse nulla et blanditiis quia necessitatibus facilis architecto praesentium fuga modi.</p>
-      </div>
-      <div class="bg-secondary col-4 d-md-none">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio iure aspernatur tenetur cum accusantium eius. Veniam, fugit saepe? Ratione, esse nulla et blanditiis quia necessitatibus facilis architecto praesentium fuga modi.</p>
+      <!-- Side social media nav -->
+
+      <div class="flex-right">
+        <div class="flex-right dis-none">
+          <div class="card bg-dark text-white">
+            <img class="card-img" src="./images/Munshi_Ghat_in_Varanasi.jpg" alt="Title" width="100%">
+            <div class="card-img-overlay">
+              <h4 class="card-title">Varanasi</h4>
+            </div>
+          </div>
+        </div>
+        <div class="p-1 border-left">
+
+          <!-- Quote -->
+          <div class="card mt-2">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p
+                  style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 12px;">
+                  I haven’t been everywhere, but it’s on my list.</p>
+                <footer class="blockquote-footer ms-3"><cite title="Source Title">Susan Sontag</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+          <!-- Quote end -->
+
+          <div class="popover-header text-center">
+            <p class="my-3">Follow us.</p>
+            <div class="text-center mb-2">
+              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-instagram"
+                  style="color: #000000;"></i></a>
+              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a>
+              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-telegram" style="color: #000000;"></i></a>
+              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-facebook" style="color: #000000;"></i></a>
+              <a class="px-2" href="#" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #000000;"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="bg-black">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio iure aspernatur tenetur cum accusantium eius. Veniam, fugit saepe? Ratione, esse nulla et blanditiis quia necessitatibus facilis architecto praesentium fuga modi.</p>
-      </div>
-      <div class="bg-danger">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio iure aspernatur tenetur cum accusantium eius. Veniam, fugit saepe? Ratione, esse nulla et blanditiis quia necessitatibus facilis architecto praesentium fuga modi.</p>
-      </div>
-    </div>
+  </section>
+  </section>
+
+  <!-- Main page -->
+
   </main>
+  <section class="site-newsletter border-top mt-3">
+    <div class="container">
+      <div class="text-center mt-4">
+        <h3 class="h4 mb-2">Subscribe to our newsletter</h3>
+        <p class="text-muted">Join our monthly newsletter and never miss out on a new stories and offers.</p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-9 col-md-7 col-lg-5 ms-auto me-auto">
+            <div class="input-group mb-3 mt-3">
+              <input type="text" class="form-control" placeholder="Email address" aria-label="Email address">
+              <span><button class="btn btn-success" type="button">Subscribe</button></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Newsletter end -->
+  <section>
+    <div class="container">
+
+    </div>
+  </section>
+  <!-- Footer -->
+
+  <hr>
+  <div class="container w-50">
+    <footer class="py-3 my-4" data-bs-theme="dark">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">Booking</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">Places</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">Privacy</a></li>
+      </ul>
+      <div class="d-flex flex-wrap justify-content-between pt-3 mt-4">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <img src="./images/Flight-Icon-PNG.png" alt="" class="bi" width="30" height="24" srcset="">
+          </a>
+          <span class="mb-3 mb-md-0 text-dark">&copy; 2023 Company, Inc.</a></span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-instagram"
+                style="color: #000000;"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-twitter"
+                style="color: #000000;"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-telegram"
+                style="color: #000000;"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-facebook"
+                style="color: #000000;"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-whatsapp"
+                style="color: #000000;"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer end -->
+  </div>
+  <p class="float-end"><a href="#">Back to top</a></p>
 
 
 </body>
