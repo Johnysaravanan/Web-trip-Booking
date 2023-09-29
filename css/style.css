@@ -1,7 +1,13 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 
+/* Google Font */
+
+  @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cinzel&family=Mooli&family=Sedgwick+Ave+Display&family=Tourney:wght@100&display=swap');
+
+  .gss{
+    
+  }
 
 body {
   padding-top: 3rem;
@@ -19,46 +25,38 @@ body {
 /* THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
 }
 
-/* Since positioning the image, we need to help out the caption */
+/* positioning the image caption */
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
+/* heights of carousel - positioning of img element */
 .carousel-item {
   height: 32rem;
 }
 
 
-/* MARKETING CONTENT
--------------------------------------------------- */
+/* MARKETING CONTENT */
 
-/* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
-/* rtl:begin:ignore */
 .marketing .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
 
-
-
-/* Featurettes
-------------------------- */
+/* Featurettes */
 
 .featurette-divider {
   margin: 5rem 0;
-  /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -96,11 +94,12 @@ body {
     text-align: center !important;
   }
 }
-@media (min-width: 767px){
-  .tex-sm-center{
+
+@media (min-width: 767px) {
+  .tex-sm-center {
     display: none;
   }
-} 
+}
 
 
 /* Side Follow us navbar */
@@ -114,7 +113,7 @@ body {
   flex: 70%;
 }
 
-.left-btr{
+.left-btr {
   border-left: 5px;
   border-color: black;
 }
@@ -126,84 +125,112 @@ body {
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 767px) {
-  .flex-right, .flex-left {
+
+  .flex-right,
+  .flex-left {
     flex: 100%;
   }
-  .flex-left{
+
+  .flex-left {
     margin-top: 1.25rem;
   }
 }
 
 @media (max-width:767px) {
-  .dis-none{
+  .dis-none {
     display: none;
   }
 }
 
 
-
 /* Style for places.html */
-*{
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-.item, .content{
+
+.item,
+.content {
   text-align: center;
 }
-img,.content{
+
+img,
+.content {
   transition: all 0.3s;
   border-radius: 5px;
 }
-.item{
+
+.item {
   position: relative;
 }
-.item img{
+
+.item img {
   width: 100%;
 }
-.item .content{
+
+.item .content {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.1);
   color: #fff;
   opacity: 0;
 }
-.item .content h2{
+
+.item .content h2 {
   padding-top: 35%;
   font-style: 40px;
 }
-.item:hover .content{
+
+.item:hover .content {
   opacity: 1;
   z-index: 0;
 }
-.item:hover .block{
-  opacity: 0;
-}
-.item:hover img{
+
+.item:hover img {
   -webkit-filter: blur(1px);
-  filter:blur(1px);
+  filter: blur(1px);
 }
-.content{
+
+.content {
   text-align: center;
   padding-top: 29%;
 }
 
-.content p{
-  font-size: 8px;
+
+.link a {
+  position: relative;
 }
 
-.ion:hover{
-  translate: 5px;
+.link a::before {
+  content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: #ffee10;
-  transition: .5s;
-  transform: scale(.9);
-  z-index: -1;}
+  height: 2px;
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.link .h-1::before{
+  background: linear-gradient(to left, #fcfcfc 10%,#a2d3fc 25%, #49cef7 50%, #98d9f5 75%, #ffffff 90%);
+}
+
+.link .b-1::before{
+  background: linear-gradient(to left, #fdfdfd 10%,#79f175 25%, #4fff5e 50%, #6fec84 75%, #ffffff 90%);
+}
+
+.link .pp-1::before{
+  background: linear-gradient(to left, #fdfdfd 10%,#f78f8f 25%, #f74a4a 50%, #fa9191 75%, #ffffff 90%);
+}
+
+.link a:hover::before {
+  transform: scaleX(1);
+}
