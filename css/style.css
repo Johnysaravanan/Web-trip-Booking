@@ -139,3 +139,71 @@ body {
     display: none;
   }
 }
+
+
+
+/* Style for places.html */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.item, .content{
+  text-align: center;
+}
+img,.content{
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+.item{
+  position: relative;
+}
+.item img{
+  width: 100%;
+}
+.item .content{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.2);
+  color: #fff;
+  opacity: 0;
+}
+.item .content h2{
+  padding-top: 35%;
+  font-style: 40px;
+}
+.item:hover .content{
+  opacity: 1;
+  z-index: 0;
+}
+.item:hover .block{
+  opacity: 0;
+}
+.item:hover img{
+  -webkit-filter: blur(1px);
+  filter:blur(1px);
+}
+.content{
+  text-align: center;
+  padding-top: 29%;
+}
+
+.content p{
+  font-size: 8px;
+}
+
+.ion:hover{
+  translate: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffee10;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;}
