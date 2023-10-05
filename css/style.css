@@ -5,10 +5,6 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cinzel&family=Mooli&family=Sedgwick+Ave+Display&family=Tourney:wght@100&display=swap');
 
-  .gss{
-    
-  }
-
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -234,3 +230,4 @@ img,
 .link a:hover::before {
   transform: scaleX(1);
 }
+
